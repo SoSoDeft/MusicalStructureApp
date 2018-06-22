@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Music App</string>
+    <string name="song_title_string">Song Title</string>
+    <string name="artist_name_text">Artist Name</string>
+    <string name="andy_mineo_track">You can\'t stop me</string>
+    <string name="cool_breeze_track">Gangsta Partna</string>
+    <string name="no_doubt_track">Don\'t Speak</string>
+    <string name="santana_track">Mirage</string>
+    <string name="sevin_track">Champion</string>
+    <string name="signtist_track">Magnum Opus</string>
+    <string name="wutang_track">Triumph (Instrumental)</string>
+    <string name="song_item_artist_string">Artist</string>
+    <string name="song_item_track_string">Song</string>
+    <string name="content_desc_string">album image</string>
+</resources>

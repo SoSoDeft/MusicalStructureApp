@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_item_height">88dp</dimen>
+    <dimen name="detail_text_padding">16dp</dimen>
+    <dimen name="audio_panel_top_padding">66dp</dimen>
+    <dimen name="song_title_text_size">32sp</dimen>
+    <dimen name="artist_text_size">16sp</dimen>
+    <dimen name="song_item_padding">16dp</dimen>
+    <dimen name="half_height">44dp</dimen>
+    <dimen name="image_dimen">24dp</dimen>
+</resources>

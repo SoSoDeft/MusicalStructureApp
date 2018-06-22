@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/detail_album_image"
+        android:layout_height="250dp"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/content_desc_string"
+        />
+
+    <RelativeLayout
+        android:id="@+id/control_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_album_image"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/detail_song_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/detail_text_padding"
+            android:text="@string/song_title_string"
+            android:textSize="@dimen/song_title_text_size"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/detail_artist_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/detail_text_padding"
+            android:layout_below="@+id/detail_song_title"
+            android:text="@string/artist_name_text"
+            android:textSize="@dimen/artist_text_size"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/audio_panel"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/control_panel"
+        android:paddingTop="@dimen/audio_panel_top_padding"
+        android:background="@color/colorPrimaryDark">
+        <!-- Icon from MiWok app looks great, so I incorporated -->
+        <ImageView
+            android:id="@+id/play_icon"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:layout_margin="16dp"
+            android:src="@drawable/baseline_pause_black_48dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
