@@ -1,20 +1,13 @@
 package com.example.android.musicalstructureapp;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.media.AudioManager;
-import android.media.MediaPlayer;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
-
-import static java.security.AccessController.getContext;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
                 R.raw.signtist_magnum_opus));
         songs.add(new Song("WuTang Clan", getString(R.string.wutang_track), R.drawable.wutangclan_triumph,
                 R.raw.wutang_clan_triumph_instrumental));
-
 
 
         SongAdapter adapter = new SongAdapter(this, songs);
@@ -76,19 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 startActivity(intent);
-
-
             }
         });
-
-
-
     }
-
-
-
-
-
-
-
 }

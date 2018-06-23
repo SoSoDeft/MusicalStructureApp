@@ -15,8 +15,7 @@ import java.util.ArrayList;
 public class SongAdapter extends ArrayAdapter<Song> {
 
 
-
-    public SongAdapter(Activity context, ArrayList<Song> song){
+    public SongAdapter(Activity context, ArrayList<Song> song) {
 
         super(context, 0, song);
 
@@ -24,12 +23,12 @@ public class SongAdapter extends ArrayAdapter<Song> {
 
     @NonNull
     @Override
-    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent){
+    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
         // The list item that will eventually get passed as View
         View listItemView = convertView;
 
-        if(listItemView == null){ // If listItemView exists...
+        if (listItemView == null) { // If listItemView exists...
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.song_item, parent, false); // Inflate custom song_item view
 

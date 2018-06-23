@@ -10,12 +10,12 @@ public class Song {
     private int songAudio;
 
     // Default Constructor
-    Song(){
+    Song() {
 
     }
 
     // Constructor
-    Song(String songName, String songTitle, int songImage, int songAudio){
+    Song(String songName, String songTitle, int songImage, int songAudio) {
 
         this.songName = songName;
         this.songTitle = songTitle;
@@ -26,19 +26,21 @@ public class Song {
 
     //Getter methods for constructor
 
-    public String getSongName(){
+    public String getSongName() {
         return songName;
     }
 
-    public String getSongTitle(){
+    public String getSongTitle() {
         return songTitle;
     }
 
-    public int getSongImage(){
+    public int getSongImage() {
         return songImage;
     }
 
-    public int getSongAudio() { return songAudio; }
+    public int getSongAudio() {
+        return songAudio;
+    }
 
 
 }
